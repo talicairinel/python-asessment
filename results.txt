@@ -1,0 +1,4 @@
+Name,Average,Grade
+Irinel,77.67,C
+Cristi,83.00,B
+Tarek,91.67,A
