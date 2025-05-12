@@ -1,6 +1,6 @@
 ####################################
 #### Name: Irinel_Talica
-#### Date:
+#### Date: 12.05.2025
 #### Programme: Python_Assessment
 ####################################
 
@@ -43,22 +43,19 @@ def assign_grade(average):
         return 'F'
 
 
-# This function writes the processed student results (name, average score, and grade) into a CSV file.
+# This function writes the processed student results (name, average score, and grade) into a TXT file.
 def write_results(results, output_path):
     with open(output_path, 'w') as f:
-        # Writing the header row
         f.write("Name,Average,Grade\n")
-        # Writing each student's data
         for name, avg, grade in results:
             f.write(f"{name},{avg:.2f},{grade}\n")  # Formatting average to 2 decimal places
 
 
-# The main function serves as the entry point for the script.
-# It processes input arguments, reads data, calculates averages and grades, and writes the results to a file.
+
+#This function processes input arguments, reads data, calculates averages and grades, and writes the results to a file.
 def main():
-    # Checking if the input file is provided as a command-line argument
     if len(sys.argv) < 2:
-        print("Usage: python main.py input.csv")  # Displaying usage information
+        print("Usage: python main.py input.csv")  
         sys.exit(1)  # Exiting the program if input is missing
 
     # Reading input and output file paths
